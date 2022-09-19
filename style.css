@@ -15,9 +15,11 @@ body {
 
 /* Header */
 #head {
-  height: 100px;
   background-color: black;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .head__nav {
@@ -25,11 +27,18 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1080px;
-  height: 100%;
   margin: 0 auto;
+  padding: 15px 0;
+}
+
+.nav__title span {
+  display: block;
+  font-size: 2rem;
+  color: #ff9985;
 }
 
 .nav__list {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -43,6 +52,50 @@ body {
 }
 
 .nav__list a:hover {
-  color: grey;
-  transition: color 0.5s ease-in;
+  border-bottom: 3px solid #ff9985;
 }
+
+/* hero */
+#hero {
+  color: white;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/assets/arnold-francisca-FBNxmwEVpAc-unsplash.jpg) center no-repeat;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-size: 2rem;
+}
+
+.hero__title span {
+  display: block;
+  color: #ff9985;
+  text-transform: capitalize;
+}
+
+.hero__subTitle {
+  margin-top: 50px;
+}
+
+.hero__subTitle a {
+  background-color: #050100;
+  color: #ff9985;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+/* Projects */
